@@ -27,3 +27,24 @@ https://sass-lang.com/
 http://sass-lang.com/documentation/Sass/Script/Functions.html
 
 https://babeljs.io/
+
+
+/* SSH setup for git hub */
+
+// checking rsa
+ls -a ~/.ssh
+
+// generating public/private keys
+ssh-keygen -t rsa -b 4096 -C "my@email.com"
+
+// check if ssh agent is running
+eval "$(ssh-agent -s)"
+
+// provide path to private key
+ssh-add ~/.ssh/id_rsa
+
+// copy rsa public key to clipboard
+clip < ~/.ssh/id_rsa.pub
+
+// ssh check for git hub
+ssh -T git@github.com
