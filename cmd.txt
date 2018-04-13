@@ -1,0 +1,29 @@
+//install yarn
+npm instal -g yarn
+
+//run public server
+live-server public
+
+
+//watch with babel directory
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+
+//install dependency
+yarn add webpack@3.1.0
+
+//running with watch
+npm run test -- --watch
+
+
+
+
+
+
+//sites
+https://necolas.github.io/normalize.css/
+
+https://sass-lang.com/
+http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+https://babeljs.io/
