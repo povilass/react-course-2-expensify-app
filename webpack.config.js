@@ -1,4 +1,7 @@
 const path = require('path');
+/*
+   Extracting all css files from app.js into styles.css file
+*/
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = (env) => {
@@ -20,6 +23,10 @@ module.exports = (env) => {
                     exclude: /node_module/
                 },
                 {
+                    /*
+                       Extract css still should be visible in browser with sourceMap
+                       because we want to know real location of the files
+                     */
                     use: CSSExtract.extract({
                         use: [
                             {
