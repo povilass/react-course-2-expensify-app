@@ -62,3 +62,9 @@ heroku create react-course-2-expensify
 
 //updating
 git push heroku master
+
+//open live url for heroku
+heroku open
+
+//heroku logs
+heroku logs
