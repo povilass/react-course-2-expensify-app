@@ -59,3 +59,6 @@ heroku login
 
 //create app
 heroku create react-course-2-expensify
+
+//updating
+git push heroku master
