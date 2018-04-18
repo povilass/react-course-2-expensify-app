@@ -48,3 +48,14 @@ clip < ~/.ssh/id_rsa.pub
 
 // ssh check for git hub
 ssh -T git@github.com
+
+// run express server
+node server/server.js
+
+/***** HEROKU ******/
+
+//login
+heroku login
+
+//create app
+heroku create react-course-2-expensify
