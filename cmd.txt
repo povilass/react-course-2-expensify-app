@@ -69,6 +69,8 @@ heroku open
 //heroku logs
 heroku logs
 
+//heroku config
+
 
 //firebase
 firebase.google.com
